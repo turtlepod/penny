@@ -1,0 +1,393 @@
+/**
+ * Media Queries CSS
+******************************************/
+
+/*****************************************
+ * TABLE OF CONTENTS:
+ * 
+ * #00 - VIEWPORT FIX
+ * #01 - CONTAINER     (max-width:  770px)
+ * #02 - HEADER        (max-width:  650px)
+ * #03 - SIDEBAR       (max-width: 1000px)
+ * #04 - MENU          (max-width:  850px)
+ * #05 - ENTRY         (max-width:  600px)
+ * #06 - LOOP-NAV      (max-width:  450px)
+ * #07 - COMMENTS      (max-width:  700px)
+ * #08 - JETPACK       (max-width:  450px)
+ * 
+ *****************************************/
+
+/* === #00 - VIEWPORT FIX === 
+ * Does the same thing as <meta name="viewport" content="width=device-width">
+ * for Windows 8 "Snapped" views in IE10+
+ * @link http://core.trac.wordpress.org/ticket/25888
+ * @link http://blog.teamtreehouse.com/thinking-ahead-css-device-adaptation-with-viewport
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+
+/* === #01 - CONTAINER === */
+@media screen and (max-width: 770px) {
+	body{
+		padding: 10px;
+	}
+	#container{
+		padding: 20px;
+		padding: 2rem;
+		margin: 0;
+		max-width: 100%;
+		box-shadow: none;
+	}
+}
+
+/* === #02 - HEADER === */
+@media screen and (max-width: 650px) {
+	img#header-image{
+		float: none;
+		margin: 0 auto 20px;
+		margin: 0 auto 2rem;
+	}
+	#branding{
+		text-align: center;
+	}
+}
+
+/* === #03 - SIDEBAR === */
+@media screen and (max-width: 1000px) {
+
+	/* js-disabled */
+	#sidebar:target{
+		display: block;
+	}
+	#sidebar:target #sidebar-toggle-close{
+		display: block;
+	}
+
+	#sidebar-toggle-close a::before{
+		content: "\f158";
+		font-family: "dashicons";
+		vertical-align: top;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	/* Sidebar and content */
+	#main{
+		padding-top: 1rem;
+	}
+	.main-wrap{
+		margin-right: 0;
+		position: relative;
+	}
+	#content{
+		float: none;
+		padding-top: 70px;
+		padding-top: 7rem;
+	}
+	#content:after{
+		content:".";display:block;height:0;clear:both;visibility:hidden;
+	}
+	#sidebar{
+		margin-right: 0;
+		padding-top:70px;
+		padding-top:7rem;
+		padding-left: 0;
+		float: left;
+		width: 100%;
+		max-width: 300px;
+		max-width: 30rem;
+	}
+
+	/* Sidebar Toggles */
+	#sidebar-toggle{
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#sidebar-toggle a{
+	}
+	#sidebar-toggle a span{
+	}
+	#sidebar-toggle a::before{
+		content: "\f141";
+		font-family: "dashicons";
+		vertical-align: top;
+		-webkit-font-smoothing: antialiased;
+	}
+		/* Active Sidebar */
+		.sidebar-toggle-active #sidebar-toggle a span{
+			display:none;
+		}
+		.sidebar-toggle-active #sidebar-toggle a::before{
+			content: "\f158";
+		}
+	/* Active Sidebar */
+	.sidebar-toggle-active .main-wrap{
+		overflow: hidden;
+	}
+	.sidebar-toggle-active #main{
+		background: -moz-linear-gradient(left,  rgba(232,232,232,0.65) 0%, rgba(255,255,255,0.96) 8%, rgba(255,255,255,1) 9%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(232,232,232,0.65)), color-stop(8%,rgba(255,255,255,0.96)), color-stop(9%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(232,232,232,0.65) 0%,rgba(255,255,255,0.96) 8%,rgba(255,255,255,1) 9%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(232,232,232,0.65) 0%,rgba(255,255,255,0.96) 8%,rgba(255,255,255,1) 9%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(232,232,232,0.65) 0%,rgba(255,255,255,0.96) 8%,rgba(255,255,255,1) 9%); /* IE10+ */
+		background: linear-gradient(to right,  rgba(232,232,232,0.65) 0%,rgba(255,255,255,0.96) 8%,rgba(255,255,255,1) 9%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6e8e8e8', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	}
+	.sidebar-toggle-active #content{
+		float: left;
+		margin-left: -360px;
+		margin-left: -36rem;
+		border: none;
+	}
+	.sidebar-toggle-active #content:after{
+		content:"";
+	}
+	.sidebar-toggle-active #sidebar{
+		display: block;
+		float: right;
+		margin: 0;
+		padding-left: 40px;
+		padding-left: 4rem;
+		padding-right: 20px;
+		padding-right: 2rem;
+		max-width: 360px;
+		max-width: 36rem;
+	}
+}
+
+
+/* === #04 - MENU === */
+@media screen and (max-width: 850px) {
+
+	/* Display sub menu */
+	.mobile-menu-active .menu-dropdown li:hover > .sub-menu{
+		left: auto;
+	}
+
+	/* js-disabled */
+	#menu-primary:target #menu-primary-items{
+		display: block;
+	}
+	#menu-primary:target .menu-toggle-primary-open{
+		display: none;
+	}
+	#menu-primary:target .menu-toggle-primary-close{
+		display: inline;
+	}
+
+	/* Hide Menu */
+	#menu-primary-items{
+		margin-bottom: 30px;
+		margin-bottom: 3rem;
+		display: none;
+	}
+	/* Display Menu */
+	.menu-toggle-active #menu-primary-items{
+		display: block;
+	}
+
+	#menu-primary .menu-dropdown > .wrap{
+		display: block;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	/* Opacity when seach active to 1 */
+	.search-toggle-active .menu-container div.menu{
+		opacity: 1;
+	}
+
+	/* Menu Primary Toggle */
+	#menu-toggle-primary{
+		display: block;
+		font-weight: 700;
+		line-height: 1.8em;
+		padding: 9px;
+		padding: 0.9rem;
+		width: 100%;
+		height: 47px;
+		height: 4.7rem;
+	}
+	#menu-toggle-primary a::before{
+		content: "\f203";
+		font-family: 'dashicons';
+		font-weight: 400;
+		font-size: 20px;
+		font-size: 2rem;
+		vertical-align: top;
+		margin-right: 0.5rem;
+		margin-right: 5px;
+		-webkit-font-smoothing: antialiased;
+	}
+		#menu-toggle-primary a.menu-toggle-primary-close::before{
+			content: "\f158";
+		}
+	#menu-toggle-primary a{
+		color: #999;
+	}
+	#menu-toggle-primary a:hover{
+		color: #333;
+	}
+	.menu-toggle-active.menu-container #menu-toggle-primary{
+		border-bottom: 1px solid #ccc;
+	}
+	#menu-primary .menu-dropdown:after{
+		content:".";display:block;height:0;clear:both;visibility:hidden;
+	}
+	#menu-primary .menu-toggle-active > .wrap{
+		display: block;
+	}
+	.menu-dropdown .sub-menu .menu-item-open-children > a:before, .menu-dropdown .sub-menu .menu-item-has-children > a:before{
+		content: "";
+	}
+
+	/* Has Children Position Fix */
+	.menu-dropdown ul li.menu-item-open-children > a:before,
+	.menu-dropdown ul li.menu-item-has-children > a:before{
+		position: inherit;
+		right: auto;
+	}
+
+	/* Mobile Menu Style */
+	.menu-dropdown li{
+		display: block;
+		width: 100%;
+	}
+	.menu-dropdown .sub-menu{
+		width: 100%;
+		border: none;
+	}
+	.menu-dropdown li a,
+	.menu-dropdown .sub-menu li a{
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #ccc;
+		background: #eee;
+	}
+	.menu-dropdown .sub-menu li a{
+		background: transparent;
+	}
+	.menu-dropdown .sub-menu li:hover > .sub-menu,
+	.menu-dropdown li:hover > .sub-menu,
+	.menu-dropdown .sub-menu{
+		opacity: 1;
+		left: auto;
+		top: auto;
+		position: inherit;
+	}
+	.menu-dropdown .sub-menu .sub-menu,
+	.menu-dropdown .sub-menu .sub-menu{
+	}
+	.menu-dropdown .sub-menu .sub-menu{
+	}
+	.menu-dropdown ul li.menu-item-open-children > a::before,
+	.menu-dropdown ul li.menu-item-has-children > a::before{
+		content: "";
+	}
+	/* .sub-menu .sub-menu */
+	.menu-dropdown .sub-menu .sub-menu li a::before{
+		content:"\f460 ";
+		font-family: 'dashicons';
+		vertical-align: top;
+		padding: 0;
+		margin-right: 5px;
+		margin-right: 0.5rem;
+		float: none;
+		-webkit-font-smoothing: antialiased;
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 ";
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 \f460 ";
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 \f460 \f460 ";
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 \f460 \f460 \f460 ";
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 \f460 \f460 \f460 \f460 ";
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 \f460 \f460 \f460 \f460 \f460 ";
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 \f460 \f460 \f460 \f460 \f460 \f460 ";
+	}
+	.menu-dropdown .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu .sub-menu li a::before{
+		content:"\f460 \f460 \f460 \f460 \f460 \f460 \f460 \f460 \f460 ";
+	}
+}
+
+
+/* === #05 - ENTRY === */
+@media screen and (max-width: 600px) {
+	.plural .entry .theme-thumbnail{
+		float: none;
+		margin-left: 0;
+	}
+	.entry-byline .entry-author{
+		display: block;
+	}
+	.entry-byline .entry-published:before{
+		content: "";
+	}
+	.entry-byline .post-edit-link{
+		display: block;
+	}
+	.entry-byline .post-edit-link:before{
+		content: "";
+	}
+}
+
+/* === #06 - LOOP-NAV === */
+@media screen and (max-width: 450px) {
+	.loop-nav .prev{
+		width: 100%;
+	}
+	.loop-nav .next{
+		width: 100%;
+		padding-right: 0;
+		padding-left: 30px;
+		padding-left: 3rem;
+		text-align: left;
+	}
+	.loop-nav .next a:after{
+		right: auto;
+		left: 0;
+	}
+}
+
+
+/* === #07 - COMMENTS === */
+@media screen and (max-width: 700px) {
+	#respond .comment-form-author,
+	#respond .comment-form-email,
+	#respond .comment-form-url{
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+	#respond #submit{
+		float: none;
+	}
+}
+
+
+/* === #08 - JETPACK === */
+/* Related Posts */
+@media only screen and (max-width: 450px) {
+	div.jp-relatedposts .jp-relatedposts-post {
+		width: auto;
+		clear: both;
+		margin: 0 0 1em;
+	}
+}

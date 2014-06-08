@@ -1,0 +1,429 @@
+/**
+ * RESET CSS
+******************************************/
+
+/*****************************************
+ * TABLE OF CONTENTS:
+ * 
+ * #00 - BOX SIZING TO ALL
+ * #01 - ELEMENTS
+ * #02 - ALIGNMENT
+ * #03 - IMAGES & MEDIA
+ * #04 - HTML & BODY
+ * #05 - CLEARFIX
+ * #06 - BODY
+ * 
+ *****************************************/
+
+/* === #00 - BOX SIZING TO ALL === */
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+ 
+/* === #01 - ELEMETS === */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	outline: none;
+	font-size: 100%;
+	background: transparent;
+	border: none;
+	text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { 
+	display: block;
+}
+b, i, hr, u, center, menu, layer, s, strike, font, xmp {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	outline: none;
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	background: transparent;
+	border: none;
+	text-decoration: none;
+}
+body {
+	line-height: 1.5em;
+	color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin: 0 0 20px 0;
+	margin: 0 0 2rem 0;
+}
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h3 {
+	font-size: 1.55em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+p, figure {
+	margin: 0 0 20px 0;
+	margin: 0 0 2rem 0;
+}
+ol, ul {
+	list-style: none;
+}
+ul {
+	list-style: disc;
+	margin: 0 0 20px 2em;
+	margin: 0 0 2rem 2em;
+}
+ol {
+	list-style-type: decimal;
+	margin: 0 0 20px 3em;
+	margin: 0 0 2rem 3em;
+}
+ol ol {
+	list-style: upper-roman;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 0 20px 0;
+	margin: 0 0 2rem 0;
+}
+dl dt {
+	font-weight: bold;
+	margin: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+dl dd {
+	margin: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+strong {
+	font-weight: bold;
+}
+strong strong {
+	font-weight: normal;
+}
+em, cite {
+	font-style: italic;
+}
+em em, cite cite {
+	font-style: normal;
+}
+abbr[title],
+time[title],
+acronym[title] {
+	cursor: help;
+}
+abbr,
+acronym {
+}
+acronym {
+}
+big {
+	font-size: 120%;
+}
+small, sup, sub {
+	font-size: 80%;
+}
+sup {
+	vertical-align: baseline;
+	position: relative;
+	bottom: 0.3em;
+}
+sub {
+	vertical-align: baseline;
+	position: relative;
+	top: 0.3em;
+}
+address {
+	font-style: italic;
+	margin: 0 0 20px 0;
+	margin: 0 0 2rem 0;
+}
+li address, dd address {
+	margin: 0;
+}
+blockquote {
+	margin: 0 20px;
+	margin: 0 2rem;
+	font-style: normal;
+}
+blockquote em, blockquote cite {
+	font-style: italic;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	cursor: pointer;
+}
+pre {
+	overflow: auto;
+	font: 1em Monaco, monospace, Courier, "Courier New";
+	line-height: 1.5em;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	padding: 10px;
+	padding: 1rem;
+}
+code {
+	font: 1em Monaco, monospace, Courier, "Courier New";
+}
+pre code {
+	font-size: 1em;
+}
+ins, dfn {
+	font-style: italic;
+	text-decoration: none;
+}
+ins {
+	color: #008000;
+}
+del, s, strike {
+	text-decoration: line-through;
+}
+del {
+	color:#ff0000;
+}
+object {
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+}
+input, textarea {
+	font-size: 1em;
+	padding: 3px;
+	padding: 0.3rem;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+:focus {
+	outline: none;
+}
+form label {
+	cursor: pointer;
+}
+option {
+	padding: 1px 2px;
+	padding: 0.1rem 0.2rem;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+}
+th, td {
+	text-align: left;
+}
+hr {
+	height: 1px;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	background: #333;
+}
+
+/* === #02 - ALIGNMENT === */
+.alignleft, .left {
+	float: left;
+	margin: 0 20px 20px 0;
+	margin: 0 2rem 2rem 0;
+}
+.alignright, .right {
+	float: right;
+	margin: 0 0 20px 20px;
+	margin: 0 0 2rem 2rem;
+}
+.aligncenter, .center {
+	display: block;
+	margin: 0 auto 20px auto;
+	margin: 0 auto 2rem auto;
+}
+.alignnone, .block {
+	clear: both;
+	margin: 0 0 20px 0;
+	margin: 0 0 2rem 0;
+}
+.clear {
+	clear: both;
+}
+
+/* === #03 - IMAGES & MEDIA === */
+img{
+	max-width: 100%;
+	height: auto;
+}
+	img.wp-smiley {
+		max-height: 15px;
+		max-height: 1.5rem;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+	/* no-border */
+	img.no-border{
+		box-shadow: none !important;
+		border: none !important;
+	}
+	img.alignleft, img.alignright {
+		display: inline;
+	}
+a img{
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+	a img.alignnone{
+		display: block;
+	}
+/* Caption */
+.wp-caption{
+	max-width: 100%;
+}
+/* Audio Shortcode */
+.wp-audio-shortcode{
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	max-width: 100% !important;
+}
+.wp-audio-shortcode::after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+/* Video Shortcode */
+.wp-video-shortcode{
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	max-width: 100% !important;
+}
+.wp-video-shortcode::after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+/* === #04 - HTML & BODY === */
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 17px;
+	font-size: 1.7rem;
+	line-height: 1.7em;
+}
+
+/* === #05 - CLEARFIX === */
+.clearfix::after {
+	content:    ".";
+	display:    block;
+	height:     0;
+	clear:      both;
+	visibility: hidden;
+}
+
+/* === #06 - GALLERY === */
+.gallery {
+	text-align: center;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: 0 auto 20px;
+	margin: 0 auto 2rem;
+}
+	.gallery-row {
+		display: block;
+		clear: both;
+		overflow: hidden;
+		margin: 0;
+	}
+		.gallery-item {
+			overflow: hidden;
+			float: left;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			list-style: none;
+			border: none;
+			background: transparent;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+			.gallery-icon {}
+				.gallery-icon img {
+					width: auto;
+					max-width: 89%;
+					height: auto;
+					margin: 0 auto;
+					padding: 1%;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+			.gallery-caption {
+				margin-left: 0;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+/* Gallery item sizes depending on the number of columns */
+.gallery-col-0 .gallery-item  { width: 100%;   }
+.gallery-col-1 .gallery-item  { width: 100%;   }
+.gallery-col-2 .gallery-item  { width: 50%;    }
+.gallery-col-3 .gallery-item  { width: 33.33%; }
+.gallery-col-4 .gallery-item  { width: 25%;    }
+.gallery-col-5 .gallery-item  { width: 20%;    }
+.gallery-col-6 .gallery-item  { width: 16.66%; }
+.gallery-col-7 .gallery-item  { width: 14.28%; }
+.gallery-col-8 .gallery-item  { width: 12.5%;  }
+.gallery-col-9 .gallery-item  { width: 11.11%; }
+.gallery-col-10 .gallery-item { width: 10%;    }
+.gallery-col-11 .gallery-item { width: 9.09%;  }
+.gallery-col-12 .gallery-item { width: 8.33%;  }
+.gallery-col-13 .gallery-item { width: 7.69%;  }
+.gallery-col-14 .gallery-item { width: 7.14%;  }
+.gallery-col-15 .gallery-item { width: 6.66%;  }
+.gallery-col-16 .gallery-item { width: 6.25%;  }
+.gallery-col-17 .gallery-item { width: 5.88%;  }
+.gallery-col-18 .gallery-item { width: 5.55%;  }
+.gallery-col-19 .gallery-item { width: 5.26%;  }
+.gallery-col-20 .gallery-item { width: 5%;     }
+.gallery-col-21 .gallery-item { width: 4.76%;  }
+.gallery-col-22 .gallery-item { width: 4.54%;  }
+.gallery-col-23 .gallery-item { width: 4.34%;  }
+.gallery-col-24 .gallery-item { width: 4.16%;  }
+.gallery-col-25 .gallery-item { width: 4%;     }
+.gallery-col-26 .gallery-item { width: 3.84%;  }
+.gallery-col-27 .gallery-item { width: 3.7%;   }
+.gallery-col-28 .gallery-item { width: 3.57%;  }
+.gallery-col-29 .gallery-item { width: 3.44%;  }
+.gallery-col-30 .gallery-item { width: 3.33%;  }
