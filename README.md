@@ -10,6 +10,10 @@ Penny design is inspired by [Twenty Twelve Theme](https://wordpress.org/themes/t
 
 More info: [Penny Theme](http://genbutheme.com/themes/penny/)
 
+### Content, Excerpt, and Thumbnail Display:
+
+Penny do not display auto-excerpt. If user do not input excerpt, in archive type pages (archives pages, blog pages, search pages) full content will be displayed with no thumbnail. To display thumbnail user need to input the excerpt manually from excerpt meta box in post edit screen.
+
 ### Theme Layout and Sidebar:
 
 Penny is powered with 2 Layout, You can set the layout globally via WordPress customizer or using Layout Meta Box in post edit screen.
