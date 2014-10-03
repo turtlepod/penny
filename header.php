@@ -6,8 +6,11 @@
 </head>
 
 <body <?php hybrid_attr( 'body' ); ?>>
+<?php echo tamatebako_check_js_script(); ?>
 
 	<div id="container">
+
+		<?php tamatebako_skip_to_content(); ?>
 
 		<div class="wrap">
 

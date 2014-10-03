@@ -5,19 +5,17 @@
  */
 
 /* ==== HELPER FUNCTIONS ==== */
-
-/* Load text string used in theme */
+/* Load text string used in theme. */
 require_once( trailingslashit( get_template_directory() ) . 'includes/string.php' );
 
-/* Load theme helper function */
-require_once( trailingslashit( get_template_directory() ) . 'includes/theme.php' );
+/* Load base theme functionality. */
+require_once( trailingslashit( get_template_directory() ) . 'includes/tamatebako.php' );
+
+/* Load deprecated functions. */
+require_once( trailingslashit( get_template_directory() ) . 'includes/deprecated.php' );
 
 
 /* ==== SETUP FUNCTIONS ==== */
-
-/* Load the Hybrid Core framework and launch it. */
-require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
-new Hybrid();
 
 /* Set up the theme early. */
 add_action( 'after_setup_theme', 'penny_theme_setup' );
@@ -28,31 +26,33 @@ add_action( 'after_setup_theme', 'penny_theme_setup' );
  */
 function penny_theme_setup() {
 
-	/* Hybrid Core */
-	add_theme_support( 'hybrid-core-template-hierarchy' );
-	add_theme_support( 'get-the-image' );
-	add_theme_support( 'loop-pagination' );
-	hybrid_set_content_width( 900 );
+	/* === DEBUG === */
+	$debug_args = array(
+		'mobile'         => 1,
+		'no-js'          => 0,
+		'media-queries'  => 0,
+	);
+	//add_theme_support( 'tamatebako-debug', $debug_args );
 
-	/* Theme Layouts. */
+	/* === Theme Layouts === */
 	$layout = array(
-		'1c'        => '1 Column',
-		'2c-l'      => '2 Columns: Content / Sidebar',
+		'content'         => 'Content',
+		'content-sidebar' => 'Content / Sidebar',
 	);
 	$layout_args = array(
-		'default'   => '2c-l',
-		'customize' => false,
-		'post_meta' => false,
+		'default'   => 'content-sidebar',
+		'customize' => true,
+		'post_meta' => true,
 	);
 	add_theme_support( 'theme-layouts', $layout, $layout_args );
 
-	/* Automatic Feed Links */
+	/* === Automatic Feed Links === */
 	add_theme_support( 'automatic-feed-links' );
 
-	/* Custom Background */
+	/* === Custom Background === */
 	add_theme_support( 'custom-background', array( 'default-color' => 'e6e6e6' ) );
 
-	/* Custom Header */
+	/* === Custom Header === */
 	$header_args = array(
 		'width'                  => 150,
 		'height'                 => 150,
@@ -61,39 +61,47 @@ function penny_theme_setup() {
 	);
 	add_theme_support( 'custom-header', $header_args );
 
-	/* Menus */
-	add_action( 'init', 'penny_register_menus' );
+	/* === Register Menus === */
+	$menus_args = array(
+		"primary" => penny_string( 'menu-primary-name' ),
+		"footer" => penny_string( 'menu-footer-name' ),
+	);
+	add_theme_support( 'tamatebako-menus', $menus_args );
 
-	/* Sidebars */
-	add_filter( 'hybrid_sidebar_defaults', 'penny_sidebar_args' );
-	add_action( 'widgets_init', 'penny_register_sidebars' );
+	/* === Register Sidebars === */
+	$sidebars_args = array(
+		"primary" => array( "name" => penny_string( 'sidebar-primary-name' ), "description" => "" ),
+	);
+	add_theme_support( 'tamatebako-sidebars', $sidebars_args );
 
-	/* Images */
+	/* === Register Images Size === */
 	add_action( 'init', 'penny_register_image_sizes' );
 
-	/* Script */
-	add_action( 'wp_head', 'penny_head_script' );
-	add_action( 'wp_enqueue_scripts', 'penny_enqueue_js' );
-	add_action( 'wp_enqueue_scripts', 'penny_register_css', 1 );
-	add_theme_support( 'hybrid-core-styles', array( 'theme-open-sans-font', 'dashicons', 'parent', 'style', 'media-queries' ) );
-
-	/* Admin: TinyMCE Editor Style */
-	add_filter( 'mce_css', 'penny_mce_css' );
-	add_editor_style( array( 'style-editor.css' ) );
-	add_filter( 'tiny_mce_before_init', 'penny_tinymce_body_class' );
-
-	/* Additional Body Classes */
-	add_filter( 'body_class', 'penny_body_class' );
-
-	/* HTML 5 */
-	$html5 = array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption'
+	/* === Load Stylesheet === */
+	$style_args = array(
+		'theme-open-sans-font',
+		'dashicons',
+		'theme-reset',
+		'theme-menus',
+		'parent',
+		'style',
+		'media-queries'
 	);
-	add_theme_support( 'html5', $html5 );
+	add_theme_support( 'hybrid-core-styles', $style_args );
+
+	/* === Editor Style === */
+	$editor_css = array(
+		'css/reset.css',
+		'style.css',
+		tamatebako_google_open_sans_font_url()
+	);
+	add_editor_style( $editor_css );
+
+	/* === Customizer Mobile View === */
+	add_theme_support( 'tamatebako-customize-mobile-view' );
+
+	/* === Set Content Width === */
+	hybrid_set_content_width( 900 );
 }
 
 
@@ -114,58 +122,6 @@ function penny_custom_header_admin_head_cb(){
 
 
 /**
- * Register Nav Menus
- * @since 0.1.0
- */
-function penny_register_menus(){
-	register_nav_menu( 'primary', penny_string( 'menu-primary-name' ) );
-	register_nav_menu( 'footer', penny_string( 'menu-footer-name' ) );
-}
-
-
-/**
- * Primary Menu Fallback Callback
- * @since 0.1.0
- */
-function penny_primary_menu_fallback_cb(){
-?>
-<div class="wrap">
-	<ul class="menu-items" id="menu-primary-items">
-		<li class="menu-item">
-			<a rel="home" href="<?php echo home_url(); ?>"><?php echo penny_string( 'menu-primary-fallback-home' ); ?></a>
-		</li>
-	</ul>
-</div>
-<?php
-}
-
-
-/**
- * Sidebar Args
- * @since 0.1.0
- */
-function penny_sidebar_args( $args ){
-	$args['before_title'] = '<div class="widget-title">';
-	$args['after_title'] = '</div>';
-	return $args;
-}
-
-/**
- * Register Sidebar
- * @since 0.1.0
- */
-function penny_register_sidebars(){
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'primary',
-			'name'        => penny_string( 'sidebar-primary-name' ),
-			'description' => ''
-		)
-	);
-}
-
-
-/**
  * Register Image Size
  * @since 0.1.0
  */
@@ -175,146 +131,29 @@ function penny_register_image_sizes(){
 
 
 /**
- * Head Script.
- * Load style via "wp_head" hook, for non-supported browser
- * @link   https://github.com/scottjehl/Respond
- * @link   https://github.com/aFarkas/html5shiv
- * @since  0.1.0
+ * Open Sidebar Toggle
+ * @since 1.0.0
  */
-function penny_head_script() {
-	$js = get_template_directory_uri() . '/js/';
-	$css = get_template_directory_uri() . '/css/';
-?><!--[if IE 8]>
-<link rel="stylesheet" type="text/css" href="<?php echo $css . 'ie8.css'; ?>" media="screen" />
-<![endif]-->
-<!-- Enables media queries and html5 in some unsupported browsers. -->
-<!--[if (lt IE 9) & (!IEMobile)]>
-<script type="text/javascript" src="<?php echo $js . 'respond.min.js'; ?>"></script>
-<script type="text/javascript" src="<?php echo $js . 'html5shiv.min.js'; ?>"></script>
-<![endif]-->
+function penny_sidebar_toggle_open(){
+?>
+<div id="sidebar-toggle">
+	<a href="#sidebar"><span><?php echo penny_string( 'open-sidebar' ); ?></span></a>
+</div>
 <?php
 }
 
 
 /**
- * Register and Enqueue JS
- * @since 0.1.0
+ * Close Sidebar Toggle
+ * @since 1.0.0
  */
-function penny_enqueue_js(){
-	$js = get_template_directory_uri() . '/js/';
-	wp_enqueue_script( 'theme-fitvids', $js . 'fitvids.min.js', array( 'jquery' ), '0.1.1', true );
-	wp_enqueue_script( 'theme-js', $js . 'theme.js', array( 'jquery' ), penny_version(), true );
+function penny_sidebar_toggle_close(){
+?>
+	<div id="sidebar-toggle-close">
+		<a href="#main"><span><?php echo penny_string( 'close-sidebar' ); ?></span></a>
+	</div>
+<?php
 }
-
-
-/**
- * Register CSS
- * @since 0.1.0
- */
-function penny_register_css(){
-
-	/* Google Fonts: Open Sans / font-family: 'Open Sans', sans-serif; */
-	$open_sans = '//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic';
-	wp_register_style( 'theme-open-sans-font', $open_sans, array(), penny_version(), 'all' );
-
-	/* Media Queries */
-	wp_register_style( 'media-queries', trailingslashit( get_template_directory_uri() ) . 'media-queries.css', array(), penny_version(), 'all' );
-}
-
-
-/**
- * Fonts for MCE CSS
- * @since 0.1.0
- */
-function penny_mce_css( $mce_css ){
-
-	/* Open Sans */
-	$open_sans = '//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic';
-	$mce_css .= ',' . str_replace( ',', '%2C', $open_sans );
-
-	return $mce_css;
-}
-
-
-/**
- * Adds the <body> class to the visual editor.
- * @since  0.1.0
- */
-function penny_tinymce_body_class( $settings ) {
-	$settings['body_class'] = join( ' ', get_body_class() );
-	return $settings;
-}
-
-
-/**
- * Body Classes
- * @since 0.1.0
- */
-function penny_body_class( $classes ){
-
-	/* do not add in admin (editor classes) */
-	if ( is_admin() ){
-		$classes[] = 'entry-content';
-		return $classes;
-	}
-
-	/* Front End (not admin) */
-	$classes[] = 'wp-front-end';
-
-	/* Get all registered sidebars */
-	global $wp_registered_sidebars;
-
-	/* If not empty sidebar */
-	if ( !empty( $wp_registered_sidebars ) ){
-
-		/* Foreach widget areas */
-		foreach ( $wp_registered_sidebars as $sidebar ){
-
-			/* Add active/inactive class */
-			$classes[] = is_active_sidebar( $sidebar['id'] ) ? "sidebar-{$sidebar['id']}-active" : "sidebar-{$sidebar['id']}-inactive";
-		}
-	}
-
-	/* Get all registered menus */
-	$menus = get_registered_nav_menus();
-
-	/* If not empty menus */
-	if ( !empty( $menus ) ){
-
-		/* For each menus */
-		foreach ( $menus as $menu_id => $menu ){
-
-			/* Add active/inactive class */
-			$classes[] = has_nav_menu( $menu_id ) ? "menu-{$menu_id}-active" : "menu-{$menu_id}-inactive";
-		}
-	}
-
-	/* JS Status: will be changed to "js-enabled" by "js/theme.js" */
-	$classes[] = 'js-disabled';
-
-	/* Google Prettify Active */
-	$classes[] = 'google-prettify-active';
-
-	/* Mobile visitor class */
-	if ( wp_is_mobile() ){
-		$classes[] = 'wp-is-mobile';
-
-		/* Visitor using Opera Mini browser: opera mini browser do not use custom fonts. */
-		if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Opera Mini' ) !== false ){
-			$classes[] = 'wp-is-opera-mini';
-		}
-	}
-	/* Non-mobile visitor/using desktop browser */
-	else{
-		$classes[] = 'wp-is-not-mobile';
-	}
-
-	/* Make it unique */
-	$classes = array_unique( $classes );
-
-	return $classes;
-}
-
 
 /* theme after setup hook */
 do_action( 'penny_after_setup_theme' );

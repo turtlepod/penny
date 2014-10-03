@@ -1,19 +1,14 @@
 <?php
-/* Theme Layouts, do not load on 1c layout */
-if ( 'layout-1c' == apply_filters( 'get_theme_layout', 'layout-2c-l' ) ){
+if ( strpos( get_theme_mod( 'theme_layout' ),'sidebar' ) === false) {
 	return false;
 }
 ?>
 
-<div id="sidebar-toggle">
-	<a href="#sidebar"><span class="screen-reader-text"><?php echo penny_get_sidebar_name( 'primary' ); ?></span></a>
-</div>
+<?php penny_sidebar_toggle_open(); ?>
 
 <div id="sidebar">
 
-	<div id="sidebar-toggle-close">
-		<a href="#main"><span class="screen-reader-text"><?php echo penny_get_sidebar_name( 'primary' ); ?></span></a>
-	</div>
+	<?php penny_sidebar_toggle_close(); ?>
 
 	<aside <?php hybrid_attr( 'sidebar', 'primary' ); ?>>
 
