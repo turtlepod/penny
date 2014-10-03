@@ -1,5 +1,5 @@
 <?php
-if ( strpos( get_theme_mod( 'theme_layout' ),'sidebar' ) === false) {
+if ( strpos( get_theme_mod( 'theme_layout' ),'sidebar1' ) === false) {
 	return false;
 }
 ?>

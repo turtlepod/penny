@@ -37,10 +37,10 @@ function penny_theme_setup() {
 	/* === Theme Layouts === */
 	$layout = array(
 		'content'         => 'Content',
-		'content-sidebar' => 'Content / Sidebar',
+		'content-sidebar1' => 'Content / Sidebar',
 	);
 	$layout_args = array(
-		'default'   => 'content-sidebar',
+		'default'   => 'content-sidebar1',
 		'customize' => true,
 		'post_meta' => true,
 	);

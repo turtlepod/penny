@@ -70,7 +70,7 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 * Use tamatebako to register sidebar, deprecate: penny_register_sidebars(),
 * Use h3 for widget title, for accessibility purpose, deprecate: penny_sidebar_args(),
 * Use tamatebako to load scripts and styles, deprecate: penny_head_script(), penny_enqueue_js(), penny_register_css(),
-* Change layout from "layout-2c-l" to "layout-content-sidebar" "layout-1c" to "layout-content" and add this feature in customizer and post option as meta box.
+* Change layout from "layout-2c-l" to "layout-content-sidebar1" "layout-1c" to "layout-content" and add this feature in customizer and post option as meta box.
 
 ### 0.1.1
 * Fix theme tag
