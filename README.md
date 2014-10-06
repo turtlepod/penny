@@ -57,6 +57,7 @@ You can translate Penny using provided po and mo file.
 ## Copyright & license
 
 This theme is licensed under the [GNU General Public License](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 (GPL) or later.
+Images used in this theme are also under GPL2+ licensing.
 
 2014 © [Genbu Media](http://genbu.me/). All rights reserved.
 
