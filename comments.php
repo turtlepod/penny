@@ -11,8 +11,11 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 		<div id="comments">
 
 			<div class="comments-header">
-			<?php locate_template( array( 'misc/comments-nav.php' ), true ); // Loads the misc/comments-nav.php template. ?>
-			<h3 id="comments-number"><?php comments_number(); ?></h3>
+
+				<?php tamatebako_comments_nav(); ?>
+
+				<h3 id="comments-number"><?php comments_number(); ?></h3>
+
 			</div>
 
 			<ol class="comment-list">
@@ -28,7 +31,7 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 
 	<?php endif; // End check for comments. ?>
 
-	<?php locate_template( array( 'misc/comments-error.php' ), true ); // Loads the misc/comments-error.php template. ?>
+	<?php tamatebako_comments_error(); ?>
 
 	<?php comment_form(); // Loads the comment form. ?>
 
