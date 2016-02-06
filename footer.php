@@ -1,12 +1,12 @@
 	</div><!-- #container .wrap -->
 
-	<footer <?php hybrid_attr( 'footer' ); ?>>
+	<footer id="footer">
 
 		<div class="wrap">
 
 			<p class="credit">
-				<?php echo hybrid_get_site_link() . ' &#169; ' . date_i18n( 'Y' ); ?>
-				<?php hybrid_get_menu( 'footer' ); // Loads the menu/footer.php template. ?>
+				<a rel="home" href="<?php echo esc_url( home_url() );?>" class="site-link"><?php bloginfo( 'name' ); ?></a> &#169;  <?php echo date_i18n( 'Y' ); ?>
+				<?php get_template_part( 'menu/footer' ); // Loads the menu/footer.php template. ?>
 			</p><!-- .credit -->
 
 		</div><!-- .wrap -->

@@ -4,7 +4,7 @@
 
 	<div class="main-wrap">
 
-		<main <?php hybrid_attr( 'content' ); ?>>
+		<main class="content" id="content">
 
 			<?php if ( have_posts() ){ /* Posts Found */ ?>
 
@@ -34,7 +34,7 @@
 
 		</main><!-- #content -->
 
-		<?php hybrid_get_sidebar( 'primary' ); // Loads the sidebar/primary.php template. ?>
+		<?php tamatebako_get_sidebar( 'primary' ); // Loads the sidebar/primary.php template. ?>
 
 	</div><!-- .main-wrap -->
 
