@@ -667,6 +667,9 @@ ol #respond{
 	margin-bottom: 30px;
 	margin-bottom: 3rem;
 }
+/* Comment by Post Author */
+.comment.bypostauthor{
+}
 
 /* === #12 - LOOP NAV === */
 .post-navigation{
