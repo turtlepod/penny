@@ -1111,7 +1111,7 @@ p.comment-subscription-form input{
 
 
 /* === ENTRY === */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 590px) {
 	.plural .entry .theme-thumbnail{
 		float: none;
 		margin-left: 0;
@@ -1120,7 +1120,7 @@ p.comment-subscription-form input{
 	.entry-byline .entry-author{
 		display: block;
 	}
-	.entry-byline .entry-published:before{
+	.entry-byline .entry-date:before{
 		content: "";
 	}
 	.entry-byline .post-edit-link{
