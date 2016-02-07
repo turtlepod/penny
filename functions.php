@@ -51,6 +51,9 @@ function penny_setup(){
 	/* === LOGO === */
 	tamatebako_include( 'includes/logo' );
 
+	/* === CUSTOM FONTS === */
+	tamatebako_include( 'includes/custom-fonts' );
+
 	/* === UTILITY: Mobile View, Custom CSS === */
 	tamatebako_include( 'includes/utility' );
 

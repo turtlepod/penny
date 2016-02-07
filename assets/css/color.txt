@@ -1,0 +1,16 @@
+body.wordpress{
+	background: #e6e6e6;
+}
+a{
+	color: #21759B;
+}
+a:hover{
+	color: #0F3647;
+}
+
+===================
+Link Color
+Hover Color
+Base Color (body)
+
+Container color

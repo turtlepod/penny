@@ -189,6 +189,7 @@ pre code{
 	margin-bottom: 20px;
 	margin-bottom: 2rem;
 	box-shadow: 0 0 5px #B3B3B3;
+	background: #fff;
 	opacity: 1;
 	max-width: 40%;
 }
@@ -242,12 +243,11 @@ img#logo{
 }
 #site-title a:hover,
 #site-title a:focus{
-	color: #000;
+	color: #0F3647;
 }
 #site-description{
 	font-size: 17px;
 	font-size: 1.7rem;
-	color: #6A6A6A;
 	margin-bottom: 10px;
 	margin-bottom: 1rem;
 }
@@ -264,6 +264,7 @@ img#logo{
 }
 #menu-primary li a{
 	color: #6A6A6A;
+	background: transparent;
 }
 #menu-primary li a:hover,
 #menu-primary li a:focus{
@@ -313,7 +314,7 @@ img#logo{
 
 /* === #09 - LOOP META === */
 .archive-header{
-	background: #fafafa;
+	background: rgba(196,196,196,0.3);
 	padding: 20px;
 	padding: 2rem;
 	padding-bottom: 0;
@@ -386,7 +387,7 @@ img#logo{
 		color: #444;
 	}
 	.entry-byline a:hover{
-		color: #000;
+		color: #0F3647;
 	}
 	.entry-date:before{
 		content: " | ";
@@ -438,7 +439,7 @@ img#logo{
 	}
 	.entry-taxonomies .entry-taxonomy a:hover,
 	.entry-taxonomies .entry-taxonomy a:focus{
-		color: #000;
+		color: #0F3647;
 	}
 
 	/* Category */
@@ -1441,12 +1442,12 @@ p.comment-subscription-form input{
 	}
 	#menu-primary li li a{
 		border-color: #ededed;
-		background: #fff;
+		background: transparent;
 	}
 	#menu-primary li li a:hover,
 	#menu-primary li li a:focus{
 		border-color: #ededed;
-		background: #fff;
+		background: transparent;
 	}
 	
 }
