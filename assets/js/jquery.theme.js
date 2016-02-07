@@ -130,10 +130,4 @@ jQuery( document ).ready( function($) {
 		$( this ).parents(".menu-container").toggleClass( "menu-toggle-active" );
 	});
 
-	/* Sidebar Toggle */
-	//$( "#sidebar-toggle" ).click( function(e) {
-	//	e.preventDefault();
-	//	$( "body" ).toggleClass( "sidebar-toggle-active" );
-	//});
-
 });

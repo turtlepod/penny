@@ -14,12 +14,12 @@ add_editor_style( $editor_css );
 
 /* === ENQUEUE SCRIPTS === */
 
-add_action( 'wp_enqueue_scripts', 'nokonoko_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'penny_enqueue_scripts' );
 
 /**
  * Enqueue Scripts
  */
-function nokonoko_enqueue_scripts(){
+function penny_enqueue_scripts(){
 	global $tamatebako;
 	$name = $tamatebako->name;
 	$child = $tamatebako->child;

@@ -27,3 +27,7 @@ function penny_get_menu_name(){}
 function penny_get_sidebar_name(){}
 function penny_menu_search_form(){}
 function penny_entry_terms(){}
+
+/* 2.0.0 */
+function penny_sidebar_toggle_open(){}
+function penny_sidebar_toggle_close(){}

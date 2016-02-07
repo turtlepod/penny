@@ -48,17 +48,11 @@ function penny_setup(){
 	/* === BACKGROUND === */
 	tamatebako_include( 'includes/background' );
 
-	/* === HEADER IMAGE === */
-	//tamatebako_include( 'includes/header-image' );
-
 	/* === LOGO === */
 	tamatebako_include( 'includes/logo' );
 
 	/* === UTILITY: Mobile View, Custom CSS === */
 	tamatebako_include( 'includes/utility' );
-
-	/* === TEMPLATE FUNCTIONS === */
-	tamatebako_include( 'includes/template-functions' );
 
 }
 
