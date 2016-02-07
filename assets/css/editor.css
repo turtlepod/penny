@@ -109,6 +109,26 @@ button:hover,
 .button:hover{
 	border: 1px solid #aaa;
 }
+/* Button Secondary */
+.button.secondary{
+	font-size: 20px;
+	line-height: 2em;
+	padding: 5px 20px;
+}
+/* Button PRIMARY (for front page) */
+.button.primary{
+	border-color: #21759B;
+	background: #21759B;
+	color: #fff;
+	font-size: 20px;
+	line-height: 2em;
+	padding: 5px 20px;
+}
+.button.primary:hover,
+.button.primary:focus{
+	border-color: #0F3647;
+	background: #0F3647;
+}
 select{
 	width: 100%;
 }

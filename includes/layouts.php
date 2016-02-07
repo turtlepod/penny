@@ -11,8 +11,13 @@ $layouts = array(
 	),
 	/* Two Columns */
 	'content-sidebar1'  => array(
-		'name'          => _x( 'Content | Sidebar 1', 'layout name', 'penny' ),
+		'name'          => _x( 'Content | Sidebar', 'layout name', 'penny' ),
 		'thumbnail'     => $image_dir . 'content-sidebar1.png',
+	),
+	/* Two Columns */
+	'sidebar1-content'  => array(
+		'name'          => _x( 'Sidebar | Content', 'layout name', 'penny' ),
+		'thumbnail'     => $image_dir . 'sidebar1-content.png',
 	),
 );
 $layouts_args = array(

@@ -9,7 +9,7 @@ if ( tamatebako_is_menu_registered( 'footer' ) ){
 		'container'       => false,
 		'echo'            => false,
 		'items_wrap'      => '<span id="footer-links">%3$s</span>',
-		'depth'           => 0,
+		'depth'           => 1,
 		'fallback_cb'     => '__return_false',
 	);
 	echo strip_tags( wp_nav_menu( $args ), '<span><a>' );

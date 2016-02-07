@@ -14,6 +14,9 @@ if ( ! isset( $content_width ) ){
 
 $sidebars_args = array(
 	"primary"   => array( "name" => _x( 'Sidebar', 'sidebar name', 'penny' ), "description" => "" ),
+	"front-1"   => array( "name" => _x( 'Front Page Widget 1', 'sidebar name', 'penny' ), "description" => "" ),
+	"front-2"   => array( "name" => _x( 'Front Page Widget 2', 'sidebar name', 'penny' ), "description" => "" ),
+	"front-3"   => array( "name" => _x( 'Front Page Widget 3', 'sidebar name', 'penny' ), "description" => "" ),
 );
 add_theme_support( 'tamatebako-sidebars', $sidebars_args );
 

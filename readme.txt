@@ -2,7 +2,7 @@
 Contributors: turtlepod
 Requires at least: 4.1
 Tested up to: 4.4
-Version: 2.0.0
+Version: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, gray, white, right-sidebar, two-columns, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
@@ -30,6 +30,15 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 
 == Changelog ==
 
+= 2.0.1 - 07.Feb.2016 =
+
+* Fix read me changelog
+* Sub menu styling.
+* Support "Sidebar | Content" Layout.
+* Better widget styling.
+* Widget menus using social icons (only dashicons supported).
+* Add page template: front page + 3 widgets.
+
 = 2.0.0 - 07.Feb.2016 =
 
 * Remove Hybrid Core. Now use lastest Tamatebako.
@@ -38,31 +47,20 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 * No longer use sidebar toggle.
 * Reduce content width for readability.
 
-= 1.0.1 =
-
-* Better data sanitization in customizer.
-
 = 1.0.0 =
 
-* Change hook "chelonian_after_theme_setup" to "chelonian_after_setup_theme"
-* Update to HC 2.0.2
-* Update to Tamatebako 1.2.2
-* Add grunt files
-* update language file.
-* Fix margin-padding on mobile.
-* Change theme uri
-* Add full width background option.
-
-= 0.2.0 =
-
-* Fix Site title line height and padding.
-* Update HC Lib 2.0.1 + Tamatebako 1.1.0
+* Update to Hybrid Core 2.0.2
+* Change theme page to genbutheme.com
+* Now using Tamatebako, deprecated functions used in tamatebako.
+* Use tamatebako to register menus, deprecate: penny_register_menus(), penny_primary_menu_fallback_cb()
+* Use tamatebako to register sidebar, deprecate: penny_register_sidebars(),
+* Use h3 for widget title, for accessibility purpose, deprecate: penny_sidebar_args(),
+* Use tamatebako to load scripts and styles, deprecate: penny_head_script(), penny_enqueue_js(), penny_register_css(),
+* Change layout from "layout-2c-l" to "layout-content-sidebar1" "layout-1c" to "layout-content" and add this feature in customizer and post option as meta box.
 
 = 0.1.1 =
 
-* Fix all
-* update to tamatebako 1.0.1
-* Remove Genbu string, etc.
+* Fix theme tag
 
 = 0.1.0 =
 
