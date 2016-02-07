@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-02-07 09:28+0700\n"
+"POT-Creation-Date: 2016-02-07 20:27+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -30,40 +30,45 @@ msgstr ""
 
 #: includes/layouts.php:14
 msgctxt "layout name"
-msgid "Content | Sidebar 1"
+msgid "Content | Sidebar"
 msgstr ""
 
-#: includes/layouts.php:26
+#: includes/layouts.php:19
+msgctxt "layout name"
+msgid "Sidebar | Content"
+msgstr ""
+
+#: includes/layouts.php:31
 msgctxt "layout"
 msgid "Default"
 msgstr ""
 
-#: includes/layouts.php:27
+#: includes/layouts.php:32
 msgctxt "layout"
 msgid "Layout"
 msgstr ""
 
-#: includes/layouts.php:28
+#: includes/layouts.php:33
 msgctxt "layout"
 msgid "Global Layout"
 msgstr ""
 
-#: includes/layouts.php:58
+#: includes/layouts.php:63
 msgctxt "customizer"
 msgid "For posts in archive, show"
 msgstr ""
 
-#: includes/layouts.php:63
+#: includes/layouts.php:68
 msgctxt "customizer"
 msgid "Auto (Summary only when excerpt defined)"
 msgstr ""
 
-#: includes/layouts.php:64
+#: includes/layouts.php:69
 msgctxt "customizer"
 msgid "Full Text/Content"
 msgstr ""
 
-#: includes/layouts.php:65
+#: includes/layouts.php:70
 msgctxt "customizer"
 msgid "Summary and Thumbnail"
 msgstr ""
@@ -83,24 +88,29 @@ msgctxt "sidebar name"
 msgid "Sidebar"
 msgstr ""
 
-#: includes/setup.php:24
+#: includes/setup.php:17
+msgctxt "sidebar name"
+msgid "Front Page Widget 1"
+msgstr ""
+
+#: includes/setup.php:18
+msgctxt "sidebar name"
+msgid "Front Page Widget 2"
+msgstr ""
+
+#: includes/setup.php:19
+msgctxt "sidebar name"
+msgid "Front Page Widget 3"
+msgstr ""
+
+#: includes/setup.php:27
 msgctxt "nav menu name"
 msgid "Navigation"
 msgstr ""
 
-#: includes/setup.php:25
+#: includes/setup.php:28
 msgctxt "nav menu name"
 msgid "Footer Links"
-msgstr ""
-
-#: includes/template-functions.php:15
-msgctxt "sidebar toggle"
-msgid "Sidebar"
-msgstr ""
-
-#: includes/template-functions.php:28
-msgctxt "sidebar toggle"
-msgid "Back to content"
 msgstr ""
 
 #: includes/translation.php:13

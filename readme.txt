@@ -9,7 +9,7 @@ Tags: light, gray, white, right-sidebar, two-columns, responsive-layout, custom-
 
 == Description ==
 
-HTML5 & CSS3 Simple Elegant Responsive WordPress Theme inspired by Twenty Twelve Theme. This theme is mobile ready theme with one sidebar, two custom menus, logo, layout option, and custom CSS.
+HTML5 & CSS3 Simple Elegant Responsive WordPress Theme inspired by Twenty Twelve Theme. This theme is light weight, mobile ready with one sidebar, two custom menus, logo, layout option, and custom CSS.
 
 **Features:**
 
