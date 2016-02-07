@@ -2,7 +2,28 @@
 
 	<div class="entry-wrap">
 
-	<?php if ( has_excerpt() ) get_the_image( array( 'attachment' => false, 'size' => 'theme-thumbnail' ) ); // display thumbnail only when excerpt is displayed. ?>
+		<?php $display = get_theme_mod( 'post_display', 'auto' ); // post display option ?>
+
+		<?php
+			/* === THUMBNAIL === */
+
+			/* === Auto: only if excerpt defined === */
+			if( 'auto' == $display ){
+				if( has_excerpt() ){
+					get_the_image( array( 'attachment' => false, 'size' => 'theme-thumbnail' ) );
+				}
+				else{
+				}
+			}
+			/* === Full text: no thumbnail === */
+			elseif( 'full_text' == $display ){
+				/* no thumbnail */
+			}
+			/* === Else (summary as fallback, display thumbnail) === */
+			else{
+				get_the_image( array( 'attachment' => false, 'size' => 'theme-thumbnail' ) );
+			}
+		?>
 
 		<div class="entry-header">
 
@@ -16,20 +37,45 @@
 
 		</div><!-- .entry-header -->
 
-		<?php if ( has_excerpt() ) { // excerpt available ?>
+		<?php
+			/* === CONTENT / EXCERPT === */
 
-			<div class="entry-summary">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-summary -->
-
-		<?php } else { // no excerpt, display full contant ?>
-
-			<div class="entry-content">
-				<?php the_content(); ?>
-				<?php wp_link_pages(); ?>
-			</div><!-- .entry-content -->
-
-		<?php } ?>
+			/* === Auto: only if excerpt defined === */
+			if( 'auto' == $display ){
+				if( has_excerpt() ){
+					?>
+					<div class="entry-summary">
+						<?php the_excerpt(); ?>
+					</div><!-- .entry-summary -->
+					<?php
+				}
+				else{
+					?>
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<?php wp_link_pages(); ?>
+					</div><!-- .entry-content -->
+					<?php
+				}
+			}
+			/* === Full text: no thumbnail === */
+			elseif( 'full_text' == $display ){
+				?>
+				<div class="entry-content">
+					<?php the_content(); ?>
+					<?php wp_link_pages(); ?>
+				</div><!-- .entry-content -->
+				<?php
+			}
+			/* === Else (summary as fallback, display thumbnail) === */
+			else{
+				?>
+				<div class="entry-summary">
+					<?php the_excerpt(); ?>
+				</div><!-- .entry-summary -->
+				<?php
+			}
+		?>
 
 		<div class="entry-footer">
 			<?php tamatebako_entry_taxonomies(); ?>

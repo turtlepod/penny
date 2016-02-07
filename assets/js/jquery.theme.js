@@ -131,9 +131,9 @@ jQuery( document ).ready( function($) {
 	});
 
 	/* Sidebar Toggle */
-	$( "#sidebar-toggle" ).click( function(e) {
-		e.preventDefault();
-		$( "body" ).toggleClass( "sidebar-toggle-active" );
-	});
+	//$( "#sidebar-toggle" ).click( function(e) {
+	//	e.preventDefault();
+	//	$( "body" ).toggleClass( "sidebar-toggle-active" );
+	//});
 
 });

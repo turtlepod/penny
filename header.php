@@ -15,9 +15,9 @@
 
 			<header role="banner" id="header">
 
-				<?php if ( get_header_image() ) { ?>
-					<img id="header-image" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
-				<?php } // end header image ?>
+				<?php if ( current_theme_supports( 'tamatebako-logo' ) && get_theme_mod( 'logo' ) ) { ?>
+					<img id="logo" src="<?php echo esc_url( tamatebako_logo_url() ); ?>">
+				<?php } // end logo ?>
 
 				<div id="branding">
 					<?php if( is_front_page() ){ ?>

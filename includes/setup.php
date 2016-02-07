@@ -7,7 +7,7 @@
 
 global $content_width;
 if ( ! isset( $content_width ) ){
-	$content_width = 900;
+	$content_width = 680;
 }
 
 /* === Register Sidebars === */

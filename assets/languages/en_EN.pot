@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-01-31 14:17+0700\n"
+"POT-Creation-Date: 2016-02-07 09:28+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,81 +22,6 @@ msgstr ""
 "_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: includes/background.php:16
-msgctxt "customizer"
-msgid "Full Size Background"
-msgstr ""
-
-#: includes/custom-colors.php:29
-msgctxt "customizer"
-msgid "Primary Color"
-msgstr ""
-
-#: includes/custom-colors.php:48
-msgctxt "customizer"
-msgid "Hover Color"
-msgstr ""
-
-#: includes/custom-colors.php:67
-msgctxt "customizer"
-msgid "Highlight Color"
-msgstr ""
-
-#: includes/custom-colors.php:87
-msgctxt "customizer"
-msgid "Aqua Mode"
-msgstr ""
-
-#: includes/custom-fonts.php:10
-msgctxt "customizer"
-msgid "Site Title Font"
-msgstr ""
-
-#: includes/custom-fonts.php:16
-msgctxt "customizer"
-msgid "Post Title Font"
-msgstr ""
-
-#: includes/custom-fonts.php:22
-msgctxt "customizer"
-msgid "Widget Title"
-msgstr ""
-
-#: includes/custom-fonts.php:28
-msgctxt "customizer"
-msgid "Base Font"
-msgstr ""
-
-#: includes/custom-fonts.php:45
-msgctxt "Google Font Subset: add new subset( greek, cyrillic, vietnamese )"
-msgid "no-subset"
-msgstr ""
-
-#: includes/custom-fonts.php:51
-msgctxt "customizer"
-msgid "Fonts"
-msgstr ""
-
-#: includes/landing-page.php:17
-msgctxt "customizer"
-msgid "Landing Page"
-msgstr ""
-
-#: includes/landing-page.php:32
-msgctxt "customizer"
-msgid "Description"
-msgstr ""
-
-#: includes/landing-page.php:49
-msgctxt "customizer"
-msgid "Button URL"
-msgstr ""
-
-#: includes/landing-page.php:66
-msgctxt "customizer"
-msgid "Button Text"
-msgstr ""
 
 #: includes/layouts.php:9
 msgctxt "layout name"
@@ -123,49 +48,59 @@ msgctxt "layout"
 msgid "Global Layout"
 msgstr ""
 
+#: includes/layouts.php:58
+msgctxt "customizer"
+msgid "For posts in archive, show"
+msgstr ""
+
+#: includes/layouts.php:63
+msgctxt "customizer"
+msgid "Auto (Summary only when excerpt defined)"
+msgstr ""
+
+#: includes/layouts.php:64
+msgctxt "customizer"
+msgid "Full Text/Content"
+msgstr ""
+
+#: includes/layouts.php:65
+msgctxt "customizer"
+msgid "Summary and Thumbnail"
+msgstr ""
+
+#: includes/logo.php:13
+msgctxt "customizer"
+msgid "Logo"
+msgstr ""
+
+#: includes/logo.php:14
+msgctxt "customizer"
+msgid "Recommended size for logo is 150px wide and 150px tall."
+msgstr ""
+
 #: includes/setup.php:16
 msgctxt "sidebar name"
 msgid "Sidebar"
 msgstr ""
 
-#: includes/setup.php:17
-msgctxt "sidebar name"
-msgid "Landing Page Widget #1"
-msgstr ""
-
-#: includes/setup.php:18
-msgctxt "sidebar name"
-msgid "Landing Page Widget #2"
-msgstr ""
-
-#: includes/setup.php:19
-msgctxt "sidebar name"
-msgid "Landing Page Widget #3"
-msgstr ""
-
-#: includes/setup.php:27
+#: includes/setup.php:24
 msgctxt "nav menu name"
 msgid "Navigation"
 msgstr ""
 
+#: includes/setup.php:25
+msgctxt "nav menu name"
+msgid "Footer Links"
+msgstr ""
+
 #: includes/template-functions.php:15
-msgctxt "default menu"
-msgid "Home"
+msgctxt "sidebar toggle"
+msgid "Sidebar"
 msgstr ""
 
 #: includes/template-functions.php:28
-msgctxt "read more"
-msgid "Read more&hellip;"
-msgstr ""
-
-#: includes/template-functions.php:31
-msgctxt "read more"
-msgid "Comment"
-msgstr ""
-
-#: includes/template-functions.php:31
-msgctxt "read more"
-msgid "Comments"
+msgctxt "sidebar toggle"
+msgid "Back to content"
 msgstr ""
 
 #: includes/translation.php:13
