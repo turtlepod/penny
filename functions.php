@@ -54,9 +54,14 @@ function penny_setup(){
 	/* === CUSTOM FONTS === */
 	tamatebako_include( 'includes/custom-fonts' );
 
+	/* === CUSTOM COLORS === */
+	tamatebako_include( 'includes/custom-colors' );
+
 	/* === UTILITY: Mobile View, Custom CSS === */
 	tamatebako_include( 'includes/utility' );
 
+	/* === CUSTOMIZER: Site Title & Tagline === */
+	tamatebako_include( 'includes/customizer' );
 }
 
 do_action( 'tamatebako_after_setup' );

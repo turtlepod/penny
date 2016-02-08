@@ -11,6 +11,8 @@ a:hover{
 ===================
 Link Color
 Hover Color
-Base Color (body)
+
+Base Color (body) #444
+	- #site-title a
 
 Container color
