@@ -30,7 +30,7 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 
 == Changelog ==
 
-= 2.0.1 - 07.Feb.2016 =
+= 2.1.0 - 08.Feb.2016 =
 
 * Fix read me changelog
 * Sub menu styling.
@@ -38,6 +38,8 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 * Better widget styling.
 * Widget menus using social icons (only dashicons supported).
 * Add page template: front page + 3 widgets.
+* Color Options (link + link hover).
+* Font Options.
 
 = 2.0.0 - 07.Feb.2016 =
 

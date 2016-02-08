@@ -107,6 +107,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover{
+	color: #000;
 	border: 1px solid #aaa;
 }
 /* Button Secondary */
