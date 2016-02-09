@@ -38,7 +38,7 @@ $fonts_settings = array(
 	 * Note: availability of the subset depends on fonts selected.
 	 */
 	'font_subset' => _x( 'no-subset', 'Google Font Subset: add new subset( greek, cyrillic, vietnamese )', 'penny' ),
-	'allowed_weight' => array( '300', '300italic', '400', '400italic', '700', '700italic' ),
+	'allowed_weight' => array( '300', '300italic', '400', '400italic', '600', '600italic', '700', '700italic', '800', '800italic' ),
 );
 
 /* Additional strings used in custom font feature. */

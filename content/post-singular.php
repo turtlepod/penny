@@ -9,6 +9,7 @@
 			<div class="entry-byline">
 				<span class="entry-author vcard"><?php the_author_posts_link(); ?></span>
 				<?php tamatebako_entry_date(); ?>
+				<?php tamatebako_comments_link(); ?>
 				<?php edit_post_link(); ?>
 			</div><!-- .entry-byline -->
 
@@ -20,7 +21,6 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php edit_post_link(); ?>
 			<?php tamatebako_entry_taxonomies(); ?>
 		</footer><!-- .entry-footer -->
 

@@ -3,11 +3,25 @@
  * Scripts Setup
 **/
 
+/* === BODY CLASSES === */
+
+add_filter( 'body_class', 'penny_scripts_body_class' );
+
+/**
+ * Scripts Body Class Helper
+ */
+function penny_scripts_body_class( $classes ){
+	$classes[] = 'theme-genericons-active';
+	return $classes;
+}
+
+
 /* === EDITOR STYLE === */
 
 $editor_css = array(
-	tamatebako_google_fonts_url( array( 'Open Sans' => '300,300italic,400,400italic,700,700italic,800,800italic' ) ),
+	//tamatebako_google_fonts_url( array( 'Open Sans' => '300,300italic,400,400italic,700,700italic,800,800italic' ) ),
 	'assets/css/editor.css',
+	'assets/genericons/genericons.css',
 );
 add_editor_style( $editor_css );
 
@@ -29,8 +43,9 @@ function penny_enqueue_scripts(){
 	wp_enqueue_script( "{$name}-script" );
 
 	/* == CSS == */
-	wp_enqueue_style( "dashicons" );
-	wp_enqueue_style( "{$name}-google-fonts" );
+	//wp_enqueue_style( "dashicons" );
+	wp_enqueue_style( "genericons" );
+	//wp_enqueue_style( "{$name}-google-fonts" );
 	wp_enqueue_style( "{$name}-style" ); /* main css. */
 
 	if( is_child_theme() ) wp_enqueue_style( "{$child}-style" ); /* child theme css. */
@@ -57,8 +72,11 @@ function penny_register_scripts(){
 
 	/* === CSS === */
 
-	/* Google Fonts */
-	wp_register_style( "{$name}-google-fonts", tamatebako_google_fonts_url( array( 'Open Sans' => '300,300italic,400,400italic,700,700italic,800,800italic' ) ) );
+	/* Genericons */
+	wp_register_style( "genericons", tamatebako_theme_file( "assets/genericons/genericons", "css" ), array(), '3.4.1', 'all' );
+
+	/* Google Fonts (use Custom Fonts Module) */
+	//wp_register_style( "{$name}-google-fonts", tamatebako_google_fonts_url( array( 'Open Sans' => '300,300italic,400,400italic,700,700italic,800,800italic' ) ) );
 
 	/* Theme Debug */
 	wp_register_style( "{$name}-debug", tamatebako_theme_file( "assets/css/base/debug", "css" ), array() );

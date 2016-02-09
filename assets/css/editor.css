@@ -19,17 +19,26 @@ blockquote, q{
 	padding-left: 2rem;
 }
 blockquote{
-	padding-left: 40px;
-	padding-left: 4rem;
+	padding-left: 50px;
+	padding-left: 5rem;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.3em;
+	font-style: italic;
 }
 blockquote:before,
 q:before{
-	content: "\f122";
-	font-family: "dashicons";
-	color: #999;
+	content: '\f106';
+	font-family: "genericons";
+	font-style: normal;
+	color: #ddd;
 	position: absolute;
 	left: 0;
 	-webkit-font-smoothing: antialiased;
+}
+blockquote:before{
+	font-size: 40px;
+	font-size: 4rem;
 }
 /* Forms */
 fieldset{
