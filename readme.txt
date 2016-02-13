@@ -41,6 +41,7 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 * Color Options (link + link hover).
 * Font Options.
 * Use genericons.
+* WP SEO (Yoast) Breadcrumbs.
 
 = 2.0.0 - 07.Feb.2016 =
 
