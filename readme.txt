@@ -2,25 +2,18 @@
 Contributors: turtlepod
 Requires at least: 4.1
 Tested up to: 4.4
-Version: 2.0.1
+Version: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, gray, white, right-sidebar, two-columns, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
 
 == Description ==
 
-HTML5 & CSS3 Simple Elegant Responsive WordPress Theme inspired by Twenty Twelve Theme. This theme is light weight, mobile ready with one sidebar, two custom menus, logo, layout option, and custom CSS.
-
-**Features:**
-
-* Responsive Layout
-* Custom Background
-* Navigation Menus
-* Widget Area (Sidebar)
-* Something Cool
-* The GPL v2.0 or later license. :) Use it to make something cool.
+HTML5 & CSS3 Simple Elegant Responsive WordPress Theme. This theme is Light Weight, with 3 Layout Option, Front Page Template, Two Custom Menus, Logo Upload, SEO Optimized, Social Icons, Custom CSS, and Font Options.
 
 This theme is licensed under the GNU General Public License, version 2 (GPL) or later. All included images are also under GPL2+ licensing.
+
+For more info please visit theme page: [Penny WordPress Theme](http://genbumedia.com/themes/penny/).
 
 == Installation ==
 
