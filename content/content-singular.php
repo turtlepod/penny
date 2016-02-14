@@ -14,6 +14,11 @@
 		<footer class="entry-footer">
 			<?php edit_post_link(); ?>
 			<?php tamatebako_entry_taxonomies(); ?>
+			<div class="entry-taxonomies">
+					<span class="entry-taxonomy category">
+						<span class="entry-taxonomy-text">Categories</span> 
+						<a rel="tag" href="http://dev.play/category/uncategorized/">Uncategorized</a>		</span>
+			</div>
 		</footer><!-- .entry-footer -->
 
 	</div><!-- .entry-wrap -->

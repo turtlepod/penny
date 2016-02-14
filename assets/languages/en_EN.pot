@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-02-07 09:28+0700\n"
+"POT-Creation-Date: 2016-02-14 11:53+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -23,6 +23,51 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: includes/custom-colors.php:33
+msgctxt "customizer"
+msgid "Link Color"
+msgstr ""
+
+#: includes/custom-colors.php:58
+msgctxt "customizer"
+msgid "Link Color Hover"
+msgstr ""
+
+#: includes/custom-fonts.php:10
+msgctxt "customizer"
+msgid "Site Title Font"
+msgstr ""
+
+#: includes/custom-fonts.php:11
+msgctxt "customizer"
+msgid "You can select your preferred font for your site title below."
+msgstr ""
+
+#: includes/custom-fonts.php:18
+msgctxt "customizer"
+msgid "Post Title Font"
+msgstr ""
+
+#: includes/custom-fonts.php:25
+msgctxt "customizer"
+msgid "Base Font"
+msgstr ""
+
+#: includes/custom-fonts.php:42
+msgctxt "Google Font Subset: add new subset( greek, cyrillic, vietnamese )"
+msgid "no-subset"
+msgstr ""
+
+#: includes/custom-fonts.php:48
+msgctxt "customizer"
+msgid "Fonts"
+msgstr ""
+
+#: includes/custom-fonts.php:49
+msgctxt "customizer"
+msgid "Font Weight"
+msgstr ""
+
 #: includes/layouts.php:9
 msgctxt "layout name"
 msgid "Content"
@@ -30,40 +75,45 @@ msgstr ""
 
 #: includes/layouts.php:14
 msgctxt "layout name"
-msgid "Content | Sidebar 1"
+msgid "Content | Sidebar"
 msgstr ""
 
-#: includes/layouts.php:26
+#: includes/layouts.php:19
+msgctxt "layout name"
+msgid "Sidebar | Content"
+msgstr ""
+
+#: includes/layouts.php:31
 msgctxt "layout"
 msgid "Default"
 msgstr ""
 
-#: includes/layouts.php:27
+#: includes/layouts.php:32
 msgctxt "layout"
 msgid "Layout"
 msgstr ""
 
-#: includes/layouts.php:28
+#: includes/layouts.php:33
 msgctxt "layout"
 msgid "Global Layout"
 msgstr ""
 
-#: includes/layouts.php:58
+#: includes/layouts.php:63
 msgctxt "customizer"
 msgid "For posts in archive, show"
 msgstr ""
 
-#: includes/layouts.php:63
+#: includes/layouts.php:68
 msgctxt "customizer"
 msgid "Auto (Summary only when excerpt defined)"
 msgstr ""
 
-#: includes/layouts.php:64
+#: includes/layouts.php:69
 msgctxt "customizer"
 msgid "Full Text/Content"
 msgstr ""
 
-#: includes/layouts.php:65
+#: includes/layouts.php:70
 msgctxt "customizer"
 msgid "Summary and Thumbnail"
 msgstr ""
@@ -75,7 +125,27 @@ msgstr ""
 
 #: includes/logo.php:14
 msgctxt "customizer"
-msgid "Recommended size for logo is 150px wide and 150px tall."
+msgid "Recommended size for logo as icon is 150px tall."
+msgstr ""
+
+#: includes/logo.php:41
+msgctxt "customizer"
+msgid "Logo Mode"
+msgstr ""
+
+#: includes/logo.php:42
+msgctxt "customizer"
+msgid "How to display logo."
+msgstr ""
+
+#: includes/logo.php:48
+msgctxt "customizer"
+msgid "Icon"
+msgstr ""
+
+#: includes/logo.php:49
+msgctxt "customizer"
+msgid "Title (Replace Site Title and Tagline)"
 msgstr ""
 
 #: includes/setup.php:16
@@ -83,24 +153,29 @@ msgctxt "sidebar name"
 msgid "Sidebar"
 msgstr ""
 
-#: includes/setup.php:24
+#: includes/setup.php:17
+msgctxt "sidebar name"
+msgid "Front Page Widget 1"
+msgstr ""
+
+#: includes/setup.php:18
+msgctxt "sidebar name"
+msgid "Front Page Widget 2"
+msgstr ""
+
+#: includes/setup.php:19
+msgctxt "sidebar name"
+msgid "Front Page Widget 3"
+msgstr ""
+
+#: includes/setup.php:27
 msgctxt "nav menu name"
 msgid "Navigation"
 msgstr ""
 
-#: includes/setup.php:25
+#: includes/setup.php:28
 msgctxt "nav menu name"
 msgid "Footer Links"
-msgstr ""
-
-#: includes/template-functions.php:15
-msgctxt "sidebar toggle"
-msgid "Sidebar"
-msgstr ""
-
-#: includes/template-functions.php:28
-msgctxt "sidebar toggle"
-msgid "Back to content"
 msgstr ""
 
 #: includes/translation.php:13

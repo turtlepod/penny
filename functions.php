@@ -6,11 +6,6 @@
 /* Load Library. */
 require_once( trailingslashit( get_template_directory() ) . 'library/tamatebako.php' );
 
-/* Load External Library. */
-if( ! function_exists( 'get_the_image' ) ){
-	tamatebako_include( 'includes/get-the-image' );
-}
-
 /* Load theme general setup */
 add_action( 'after_setup_theme', 'penny_setup', 5 );
 
@@ -51,9 +46,17 @@ function penny_setup(){
 	/* === LOGO === */
 	tamatebako_include( 'includes/logo' );
 
+	/* === CUSTOM FONTS === */
+	tamatebako_include( 'includes/custom-fonts' );
+
+	/* === CUSTOM COLORS === */
+	tamatebako_include( 'includes/custom-colors' );
+
 	/* === UTILITY: Mobile View, Custom CSS === */
 	tamatebako_include( 'includes/utility' );
 
+	/* === CUSTOMIZER: Site Title & Tagline === */
+	tamatebako_include( 'includes/customizer' );
 }
 
 do_action( 'tamatebako_after_setup' );

@@ -19,17 +19,26 @@ blockquote, q{
 	padding-left: 2rem;
 }
 blockquote{
-	padding-left: 40px;
-	padding-left: 4rem;
+	padding-left: 50px;
+	padding-left: 5rem;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.3em;
+	font-style: italic;
 }
 blockquote:before,
 q:before{
-	content: "\f122";
-	font-family: "dashicons";
-	color: #999;
+	content: '\f106';
+	font-family: "genericons";
+	font-style: normal;
+	color: #ddd;
 	position: absolute;
 	left: 0;
 	-webkit-font-smoothing: antialiased;
+}
+blockquote:before{
+	font-size: 40px;
+	font-size: 4rem;
 }
 /* Forms */
 fieldset{
@@ -94,7 +103,7 @@ button,
 	padding: 4px 10px;
 	padding: 0.4rem 1rem;
 	cursor: pointer;
-	display: inline;
+	display: inline-block;
 	border-radius: 5px;
 	border-radius: 0.5rem;
 	-webkit-border-radius: 5px;
@@ -107,7 +116,30 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover{
+	color: #000;
 	border: 1px solid #aaa;
+}
+/* Button Secondary */
+.button.secondary{
+	font-size: 20px;
+	line-height: 2em;
+	padding: 5px 20px;
+	margin-right: 10px;
+}
+/* Button PRIMARY (for front page) */
+.button.primary{
+	border-color: #21759B;
+	background: #21759B;
+	color: #fff;
+	font-size: 20px;
+	line-height: 2em;
+	padding: 5px 20px;
+	margin-right: 10px;
+}
+.button.primary:hover,
+.button.primary:focus{
+	border-color: #0F3647;
+	background: #0F3647;
 }
 select{
 	width: 100%;

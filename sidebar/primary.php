@@ -4,11 +4,7 @@ if ( strpos( get_theme_mod( 'theme_layout' ), 'sidebar1' ) === false) {
 }
 ?>
 
-<?php //penny_sidebar_toggle_open(); ?>
-
 <div id="sidebar">
-
-	<?php //penny_sidebar_toggle_close(); ?>
 
 	<aside class="sidebar" id="sidebar-primary">
 

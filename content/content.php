@@ -8,10 +8,10 @@
 
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
-			<?php edit_post_link(); ?>
 		</div><!-- .entry-summary -->
 
 		<div class="entry-footer">
+			<?php edit_post_link(); ?>
 			<?php tamatebako_entry_taxonomies(); ?>
 		</div><!-- .entry-footer -->
 

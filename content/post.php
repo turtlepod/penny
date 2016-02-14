@@ -10,9 +10,11 @@
 			/* === Auto: only if excerpt defined === */
 			if( 'auto' == $display ){
 				if( has_excerpt() ){
-					get_the_image( array( 'attachment' => false, 'size' => 'theme-thumbnail' ) );
-				}
-				else{
+					if ( has_post_thumbnail() ) { ?>
+						<a class="theme-thumbnail-link" href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail( 'theme-thumbnail', array( 'class' => 'alignright theme-thumbnail', 'alt' => get_the_title() ) ); ?>
+						</a>
+					<?php }
 				}
 			}
 			/* === Full text: no thumbnail === */
@@ -21,7 +23,11 @@
 			}
 			/* === Else (summary as fallback, display thumbnail) === */
 			else{
-				get_the_image( array( 'attachment' => false, 'size' => 'theme-thumbnail' ) );
+				if ( has_post_thumbnail() ) { ?>
+					<a class="theme-thumbnail-link" href="<?php the_permalink(); ?>">
+						<?php the_post_thumbnail( 'theme-thumbnail', array( 'class' => 'alignright theme-thumbnail', 'alt' => get_the_title() ) ); ?>
+					</a>
+				<?php }
 			}
 		?>
 
@@ -32,6 +38,7 @@
 			<div class="entry-byline">
 				<span class="entry-author vcard"><?php the_author_posts_link(); ?></span>
 				<?php tamatebako_entry_date(); ?>
+				<?php tamatebako_comments_link(); ?>
 				<?php edit_post_link(); ?>
 			</div><!-- .entry-byline -->
 
