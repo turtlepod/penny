@@ -12,12 +12,14 @@ $fonts_config = array(
 		'target' => '#site-title',
 		'fonts' => array( 'websafe', 'heading', 'base' ),
 		'default' => 'Open Sans',
+		'font_weight' => 'bolder',
 	),
 	'font_post_title' => array(
 		'label' => _x( 'Post Title Font', 'customizer', 'penny' ),
 		'target' => '#content .entry-title',
 		'fonts' => array( 'websafe', 'heading', 'base' ),
 		'default' => 'Open Sans',
+		'font_weight' => 'normal',
 	),
 	'font_base' => array(
 		'label' => _x( 'Base Font', 'customizer', 'penny' ),
@@ -44,6 +46,7 @@ $fonts_settings = array(
 /* Additional strings used in custom font feature. */
 $fonts_strings = array(
 	'fonts' => _x( 'Fonts', 'customizer', 'penny' ),
+	'font_weight' => _x( 'Font Weight', 'customizer', 'penny' ),
 );
 
 add_theme_support( 'tamatebako-custom-fonts', $fonts_config, $fonts_settings, $fonts_strings );

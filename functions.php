@@ -6,11 +6,6 @@
 /* Load Library. */
 require_once( trailingslashit( get_template_directory() ) . 'library/tamatebako.php' );
 
-/* Load External Library. */
-if( ! function_exists( 'get_the_image' ) ){
-	tamatebako_include( 'includes/get-the-image' );
-}
-
 /* Load theme general setup */
 add_action( 'after_setup_theme', 'penny_setup', 5 );
 

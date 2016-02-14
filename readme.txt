@@ -36,12 +36,15 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 * Sub menu styling.
 * Support "Sidebar | Content" Layout.
 * Better widget styling.
-* Widget menus using social icons (only dashicons supported).
+* Widget menus using social icons.
 * Add page template: front page + 3 widgets.
 * Color Options (link + link hover).
-* Font Options.
+* Font Options (site title, post title, base font).
 * Use genericons.
 * WP SEO (Yoast) Breadcrumbs.
+* Font weight option for site title and post title.
+* Logo options.
+* Remove Get the image.
 
 = 2.0.0 - 07.Feb.2016 =
 

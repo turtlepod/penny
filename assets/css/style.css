@@ -233,9 +233,8 @@ img#logo{
 	margin-right: 20px;
 	margin-right: 2rem;
 	display: block;
-	width: 75px;
 	height: 75px;
-	border: 1px solid #444;
+	width: auto;
 }
 #branding{
 	
@@ -249,9 +248,9 @@ img#logo{
 	line-height: 1.2em;
 	margin-bottom: 10px;
 	margin-bottom: 1rem;
+	font-weight: 800;
 }
 #site-title a{
-	font-weight: 800;
 	color: #444;
 }
 #site-title a:hover,
@@ -263,6 +262,25 @@ img#logo{
 	font-size: 1.7rem;
 	margin-bottom: 10px;
 	margin-bottom: 1rem;
+}
+/* Logo As Title */
+.penny-logo-title #header{
+	padding-bottom: 0;
+}
+#site-logo{
+	margin-bottom: 0;
+}
+#site-logo a{
+	float: left;
+	max-width: 100%;
+	display: inline-block;
+}
+#site-logo a:hover,
+#site-logo a:focus{
+	opacity: 0.8;
+}
+#site-logo img{
+	display: block;
 }
 
 /* === MENU === */

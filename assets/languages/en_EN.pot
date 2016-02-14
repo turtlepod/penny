@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-02-07 20:27+0700\n"
+"POT-Creation-Date: 2016-02-14 11:53+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -22,6 +22,51 @@ msgstr ""
 "_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: includes/custom-colors.php:33
+msgctxt "customizer"
+msgid "Link Color"
+msgstr ""
+
+#: includes/custom-colors.php:58
+msgctxt "customizer"
+msgid "Link Color Hover"
+msgstr ""
+
+#: includes/custom-fonts.php:10
+msgctxt "customizer"
+msgid "Site Title Font"
+msgstr ""
+
+#: includes/custom-fonts.php:11
+msgctxt "customizer"
+msgid "You can select your preferred font for your site title below."
+msgstr ""
+
+#: includes/custom-fonts.php:18
+msgctxt "customizer"
+msgid "Post Title Font"
+msgstr ""
+
+#: includes/custom-fonts.php:25
+msgctxt "customizer"
+msgid "Base Font"
+msgstr ""
+
+#: includes/custom-fonts.php:42
+msgctxt "Google Font Subset: add new subset( greek, cyrillic, vietnamese )"
+msgid "no-subset"
+msgstr ""
+
+#: includes/custom-fonts.php:48
+msgctxt "customizer"
+msgid "Fonts"
+msgstr ""
+
+#: includes/custom-fonts.php:49
+msgctxt "customizer"
+msgid "Font Weight"
+msgstr ""
 
 #: includes/layouts.php:9
 msgctxt "layout name"
@@ -80,7 +125,27 @@ msgstr ""
 
 #: includes/logo.php:14
 msgctxt "customizer"
-msgid "Recommended size for logo is 150px wide and 150px tall."
+msgid "Recommended size for logo as icon is 150px tall."
+msgstr ""
+
+#: includes/logo.php:41
+msgctxt "customizer"
+msgid "Logo Mode"
+msgstr ""
+
+#: includes/logo.php:42
+msgctxt "customizer"
+msgid "How to display logo."
+msgstr ""
+
+#: includes/logo.php:48
+msgctxt "customizer"
+msgid "Icon"
+msgstr ""
+
+#: includes/logo.php:49
+msgctxt "customizer"
+msgid "Title (Replace Site Title and Tagline)"
 msgstr ""
 
 #: includes/setup.php:16

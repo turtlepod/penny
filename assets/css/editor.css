@@ -124,6 +124,7 @@ button:hover,
 	font-size: 20px;
 	line-height: 2em;
 	padding: 5px 20px;
+	margin-right: 10px;
 }
 /* Button PRIMARY (for front page) */
 .button.primary{
@@ -133,6 +134,7 @@ button:hover,
 	font-size: 20px;
 	line-height: 2em;
 	padding: 5px 20px;
+	margin-right: 10px;
 }
 .button.primary:hover,
 .button.primary:focus{
