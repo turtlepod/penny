@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-02-14 11:53+0700\n"
+"POT-Creation-Date: 2016-03-15 09:54+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -148,32 +148,32 @@ msgctxt "customizer"
 msgid "Title (Replace Site Title and Tagline)"
 msgstr ""
 
-#: includes/setup.php:16
+#: includes/setup.php:17
 msgctxt "sidebar name"
 msgid "Sidebar"
 msgstr ""
 
-#: includes/setup.php:17
+#: includes/setup.php:18
 msgctxt "sidebar name"
 msgid "Front Page Widget 1"
 msgstr ""
 
-#: includes/setup.php:18
+#: includes/setup.php:19
 msgctxt "sidebar name"
 msgid "Front Page Widget 2"
 msgstr ""
 
-#: includes/setup.php:19
+#: includes/setup.php:20
 msgctxt "sidebar name"
 msgid "Front Page Widget 3"
 msgstr ""
 
-#: includes/setup.php:27
+#: includes/setup.php:28
 msgctxt "nav menu name"
 msgid "Navigation"
 msgstr ""
 
-#: includes/setup.php:28
+#: includes/setup.php:29
 msgctxt "nav menu name"
 msgid "Footer Links"
 msgstr ""
