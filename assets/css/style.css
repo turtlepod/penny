@@ -246,8 +246,7 @@ img#logo{
 	font-size: 32px;
 	font-size: 3.2rem;
 	line-height: 1.2em;
-	margin-bottom: 10px;
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 	font-weight: 800;
 }
 #site-title a{
@@ -260,8 +259,7 @@ img#logo{
 #site-description{
 	font-size: 17px;
 	font-size: 1.7rem;
-	margin-bottom: 10px;
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 }
 /* Logo As Title */
 .penny-logo-title #header{
@@ -354,26 +352,25 @@ img#logo{
 
 /* === LOOP META === */
 .archive-header{
-	background: rgba(196,196,196,0.3);
-	padding: 20px;
-	padding: 2rem;
-	padding-bottom: 0;
+	background: #fff;
 	margin-bottom: 40px;
 	margin-bottom: 4rem;
+	padding-bottom: 20px;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #ddd;
 }
+	.archive-header:after{
+		content:".";display:block;height:0;clear:both;visibility:hidden;
+	}
 .archive-title{
 	font-weight: 700;
 	font-size: 17px;
 	font-size: 1.7rem;
 	text-transform: uppercase;
 	margin-bottom: 0;
-	padding-bottom: 20px;
-	padding-bottom: 2rem;
 }
-.archive-description p{
+.archive-description p:last-child{
 	margin-bottom: 0;
-	padding-bottom: 20px;
-	padding-bottom: 2rem;
 }
 
 /* === ENTRY === */

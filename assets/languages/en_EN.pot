@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-03-15 09:54+0700\n"
+"POT-Creation-Date: 2016-03-22 16:46+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -271,6 +271,183 @@ msgstr ""
 #: includes/translation.php:41
 msgctxt "comment"
 msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/upsell-admin.php:10 includes/upsell-admin/action-box.php:24
+#, php-format
+msgctxt "upsell"
+msgid "Only %s"
+msgstr ""
+
+#: includes/upsell-admin.php:10 includes/upsell-admin/action-box.php:27
+msgctxt "upsell"
+msgid "Upgrade"
+msgstr ""
+
+#: includes/upsell-admin/action-box.php:6
+msgctxt "upsell"
+msgid "Upgrade Benefit"
+msgstr ""
+
+#: includes/upsell-admin/action-box.php:12
+msgctxt "upsell"
+msgid "All Premium Features"
+msgstr ""
+
+#: includes/upsell-admin/action-box.php:15
+msgctxt "upsell"
+msgid "Friendly Support"
+msgstr ""
+
+#: includes/upsell-admin/action-box.php:18
+msgctxt "upsell"
+msgid "Automatic Updates"
+msgstr ""
+
+#: includes/upsell-admin/adsense.php:7
+msgctxt "upsell"
+msgid "Make Money With Adsense"
+msgstr ""
+
+#: includes/upsell-admin/adsense.php:9
+msgctxt "upsell"
+msgid ""
+"Extra widget area will give you more flexibility to add adsense ads for "
+"higher CTR which means more money in your pocket."
+msgstr ""
+
+#: includes/upsell-admin/adsense.php:11
+#: includes/upsell-admin/drag-and-drop.php:11
+#: includes/upsell-admin/edd.php:11
+#: includes/upsell-admin/events-calendar.php:11
+#: includes/upsell-admin/google-maps.php:11
+#: includes/upsell-admin/portfolio.php:11
+#: includes/upsell-admin/restaurant.php:11
+#: includes/upsell-admin/slider.php:11
+#: includes/upsell-admin/testimonial.php:11
+#: includes/upsell-admin/woocommerce.php:11
+msgctxt "upsell"
+msgid "Learn More"
+msgstr ""
+
+#: includes/upsell-admin/adsense.php:11 includes/upsell-admin/edd.php:11
+#: includes/upsell-admin/events-calendar.php:11
+#: includes/upsell-admin/google-maps.php:11
+#: includes/upsell-admin/portfolio.php:11
+#: includes/upsell-admin/restaurant.php:11
+#: includes/upsell-admin/slider.php:11
+#: includes/upsell-admin/testimonial.php:11
+#: includes/upsell-admin/woocommerce.php:11
+msgctxt "upsell"
+msgid "View Demo"
+msgstr ""
+
+#: includes/upsell-admin/drag-and-drop.php:7
+msgctxt "upsell"
+msgid "Drag and Drop Page Builder"
+msgstr ""
+
+#: includes/upsell-admin/drag-and-drop.php:9
+msgctxt "upsell"
+msgid ""
+"Powered with page builder template and drag-and-drop functionality you "
+"can create stunning and useful content easily."
+msgstr ""
+
+#: includes/upsell-admin/edd.php:7
+msgctxt "upsell"
+msgid "Sell Digital Product"
+msgstr ""
+
+#: includes/upsell-admin/edd.php:9
+msgctxt "upsell"
+msgid ""
+"Support for Easy Digital Download Plugin, making it easy for you to sell "
+"your digital product such as ebook and audio."
+msgstr ""
+
+#: includes/upsell-admin/events-calendar.php:7
+msgctxt "upsell"
+msgid "Events Calendar"
+msgstr ""
+
+#: includes/upsell-admin/events-calendar.php:9
+msgctxt "upsell"
+msgid ""
+"Support for The Events Calendar Plugin, making it easy for you to manage "
+"events in your own website."
+msgstr ""
+
+#: includes/upsell-admin/google-maps.php:7
+msgctxt "upsell"
+msgid "Display Your Location"
+msgstr ""
+
+#: includes/upsell-admin/google-maps.php:9
+msgctxt "upsell"
+msgid ""
+"Embed Google Maps in any page, so your visitor can easily find your "
+"location. Also support multiple marker in one Google Maps."
+msgstr ""
+
+#: includes/upsell-admin/portfolio.php:7
+msgctxt "upsell"
+msgid "Showcase Your Portfolio"
+msgstr ""
+
+#: includes/upsell-admin/portfolio.php:9
+msgctxt "upsell"
+msgid ""
+"Showcase your portfolio by displaying designs you crafted, photos you "
+"snapped, wedding videos you shot, or audio tracks you mixed."
+msgstr ""
+
+#: includes/upsell-admin/restaurant.php:7
+msgctxt "upsell"
+msgid "Create Restaurant Website"
+msgstr ""
+
+#: includes/upsell-admin/restaurant.php:9
+msgctxt "upsell"
+msgid ""
+"Easily create restaurant website and display your restaurant menus, "
+"opening hours, and locations."
+msgstr ""
+
+#: includes/upsell-admin/slider.php:7
+msgctxt "upsell"
+msgid "Create Slider"
+msgstr ""
+
+#: includes/upsell-admin/slider.php:9
+msgctxt "upsell"
+msgid ""
+"Highlights your content with image slideshow and carousel. You can also "
+"create slider from your featured posts."
+msgstr ""
+
+#: includes/upsell-admin/testimonial.php:7
+msgctxt "upsell"
+msgid "Testimonials"
+msgstr ""
+
+#: includes/upsell-admin/testimonial.php:9
+msgctxt "upsell"
+msgid ""
+"Easily add social proofing to your website. You can randomly slide or "
+"list selected testimonials, quotes, and reviews."
+msgstr ""
+
+#: includes/upsell-admin/woocommerce.php:7
+msgctxt "upsell"
+msgid "Create Online Store"
+msgstr ""
+
+#: includes/upsell-admin/woocommerce.php:9
+msgctxt "upsell"
+msgid ""
+"Support for WooCommerce, making it easy for you to create your own store "
+"and start selling through your site."
 msgstr ""
 
 #: includes/utility.php:11 includes/utility.php:12

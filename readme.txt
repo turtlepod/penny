@@ -23,6 +23,11 @@ For more info please visit theme page: [Penny WordPress Theme](http://genbumedia
 
 == Changelog ==
 
+= 2.3.0 - 20.Mar.2016 =
+
+* Better CSS for archive header.
+* Upsell to PRO.
+
 = 2.2.0 - 15.Mar.2016 =
 
 * Comment moderation message fix (tamatebako update)

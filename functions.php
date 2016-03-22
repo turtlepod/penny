@@ -57,6 +57,9 @@ function penny_setup(){
 
 	/* === CUSTOMIZER: Site Title & Tagline === */
 	tamatebako_include( 'includes/customizer' );
+
+	/* === UPSELL: to Pro */
+	tamatebako_include( 'includes/upsell' );
 }
 
 do_action( 'tamatebako_after_setup' );
