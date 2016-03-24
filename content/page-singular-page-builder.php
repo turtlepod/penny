@@ -1,3 +1,8 @@
+<?php
+/**
+ * Page Builder Content
+**/
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-wrap">
@@ -7,8 +12,7 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php wp_link_pages(); ?>
+			<?php get_template_part( 'content/page-builder-test' ); ?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
@@ -21,3 +25,5 @@
 </article><!-- .entry -->
 
 <?php comments_template( '', true ); // Load comments. ?>
+
+

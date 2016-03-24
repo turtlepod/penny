@@ -1,5 +1,10 @@
 <?php
 /**
+ * Hide Page Title Option
+ */
+add_theme_support( 'tamatebako-hide-page-title', array( 'label' => _x( 'Hide title in single page?', 'hide page title', 'penny' ) ) );
+
+/**
  * Layouts Setup
 **/
 $image_dir = get_template_directory_uri() . '/assets/images/layouts/';
@@ -35,7 +40,7 @@ $layouts_strings = array(
 add_theme_support( 'tamatebako-layouts', $layouts, $layouts_args, $layouts_strings );
 
 
-/* === POST DISPLAY */
+/* === POST DISPLAY === */
 
 /* Standard Post Display Options */
 add_action( 'customize_register', 'penny_post_display_customizer', 11 );

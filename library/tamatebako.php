@@ -112,6 +112,9 @@ function tamatebako_load_theme_support(){
 	/* === CUSTOM FONTS === */
 	tamatebako_require_if_theme_supports( 'tamatebako-custom-fonts', 'modules/custom-fonts/custom-fonts' );
 
+	/* === HIDE PAGE TITLE === */
+	tamatebako_require_if_theme_supports( 'tamatebako-hide-page-title', 'modules/hide-page-title' );
+
 	/* === UPSELL === */
 	if( !is_multisite() ){
 		tamatebako_require_if_theme_supports( 'tamatebako-upsell', 'modules/upsell' );
