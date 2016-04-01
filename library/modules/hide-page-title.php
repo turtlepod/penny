@@ -6,7 +6,7 @@
 **/
 
 /**
- * Logo Args
+ * Hide Page Title Args
  */
 function tamatebako_hide_page_title_args(){
 

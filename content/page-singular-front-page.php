@@ -8,9 +8,11 @@
 
 	<div class="entry-wrap">
 
-		<header class="entry-header">
-			<?php tamatebako_entry_title(); ?>
-		</header><!-- .entry-header -->
+		<?php if( tamatebako_show_page_title() ){ ?>
+			<header class="entry-header">
+				<?php tamatebako_entry_title(); ?>
+			</header><!-- .entry-header -->
+		<?php } ?>
 
 		<div class="entry-content">
 			<?php the_content(); ?>
