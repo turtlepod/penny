@@ -1,11 +1,11 @@
 === Penny ===
 Contributors: turtlepod
 Requires at least: 4.1
-Tested up to: 4.4
-Version: 2.2.0
+Tested up to: 4.7
+Version: 2.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: light, gray, white, right-sidebar, two-columns, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
+Tags: right-sidebar, two-columns, custom-background, custom-header, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
 
 == Description ==
 
@@ -22,6 +22,15 @@ For more info please visit theme page: [Penny WordPress Theme](http://genbumedia
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 2.4.0 - 20.Mar.2016 =
+
+* WP 4.7 Compat
+
+= 2.3.0 - 20.Mar.2016 =
+
+* Better CSS for archive header.
+* Upsell to PRO.
 
 = 2.2.0 - 15.Mar.2016 =
 
